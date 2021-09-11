@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">12.830s</div>
+<div class="counter">8.718s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">testeListarUsuariosEspecifico()</td>
-<td class="success">12.830s</td>
+<td class="success">testeListarTodosOsUsuarios()</td>
+<td class="success">8.718s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,47 +87,76 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Request method:	GET
-Request URI:	https://reqres.in/api/users/2
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	id=2
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:			&lt;none&gt;
-HTTP/1.1 200 OK
-Date: Wed, 08 Sep 2021 05:33:06 GMT
+<pre>HTTP/1.1 200 OK
+Date: Sat, 11 Sep 2021 22:59:25 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 x-powered-by: Express
 access-control-allow-origin: *
-etag: W/&quot;118-pbdwwFo9SKNhD3Lx5iHJyngpq00&quot;
+etag: W/&quot;3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8&quot;
 via: 1.1 vegur
 Cache-Control: max-age=14400
 CF-Cache-Status: HIT
-Age: 2413
+Age: 1125
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=DYpeXUdxUJ7U2Pj9hxaMPq1IdSWzTCPicyn4SJQXFioZo4D%2FrA5DgQQK1GtM80eWDnCVmpeyL6q%2FzGfAueCdEyde5%2B5Q9pcm2GYYHTPG6%2BfH%2BiHccYqyigg0Bdk%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=cVbmNOrqAgZigrrlUwuxNQ%2FZfbaxa518F%2Fp5wz4sNi0DCkgkKUXxqh8%2FBYC6MLDwptsplyISHcQukvKk7NlVT8HPOFFGvUBCECzlVHZf3OiyMOI6XvlgplxmxJ8%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 68b5ccd438ef5893-POA
+CF-RAY: 68d481a67dc8589e-POA
 Content-Encoding: gzip
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
-    &quot;data&quot;: {
-        &quot;id&quot;: 2,
-        &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
-        &quot;first_name&quot;: &quot;Janet&quot;,
-        &quot;last_name&quot;: &quot;Weaver&quot;,
-        &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;
-    },
+    &quot;page&quot;: 1,
+    &quot;per_page&quot;: 6,
+    &quot;total&quot;: 12,
+    &quot;total_pages&quot;: 2,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;email&quot;: &quot;george.bluth@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;George&quot;,
+            &quot;last_name&quot;: &quot;Bluth&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/1-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Janet&quot;,
+            &quot;last_name&quot;: &quot;Weaver&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;email&quot;: &quot;emma.wong@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Emma&quot;,
+            &quot;last_name&quot;: &quot;Wong&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/3-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Eve&quot;,
+            &quot;last_name&quot;: &quot;Holt&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/4-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;email&quot;: &quot;charles.morris@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Charles&quot;,
+            &quot;last_name&quot;: &quot;Morris&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/5-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;email&quot;: &quot;tracey.ramos@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Tracey&quot;,
+            &quot;last_name&quot;: &quot;Ramos&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/6-image.jpg&quot;
+        }
+    ],
     &quot;support&quot;: {
         &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
         &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
@@ -144,7 +173,7 @@ alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8</a> at 08/09/2021 02:33:12</p>
+<a href="http://www.gradle.org">Gradle 6.8</a> at 11/09/2021 19:59:29</p>
 </div>
 </div>
 </body>

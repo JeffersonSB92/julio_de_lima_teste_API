@@ -15,7 +15,8 @@ public class TesteBaseUrl {
     public static void setup(){
 
         RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
-        baseURI = "https://reqres.in/api/";
+        baseURI = "https://reqres.in/";
+        basePath = "api/";
 
         RestAssured.requestSpecification =  new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
